@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        #navbar_logo img {
+            height: 50px;
+        }
+
+        #navbar_links ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        #navbar_links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #navbar_icons svg {
+            color: white;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Updated grid item size */
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 80px; 
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px; 
+            box-shadow: 0 4px 6px #0000001a;
+            text-align: center;
+        }
+
+        .product-item img {
+             max-width: 100%;
+             border-radius: 8px;
+             margin-bottom: 10px;
+             height: 200px; 
+             object-fit: contain; 
+}
+
+        .product-item h3 {
+            font-size: 18px; 
+            margin: 10px 0 0;
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header id="navbar">
+    <div id="navbar_logo">
+        <a href="homepage.html">
+            <img src="Pictures/DJKT_PC.png" alt="DJKT_PC">
+        </a>
+    </div>
+    <div id="navbar_links">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div id="navbar_icons">
+        <a class="bi bi-cart3" href="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+        </a>
+    </div>
+</header>
+
+<main>
+    <h1>Our Products</h1>
+    <div class="product-list">
+        <div class="product-item">
+            <img src="Pictures/geforce-rtx-4090-product-photo-001.png" alt="GPU">
+            <h3>GPU</h3>
+        </div>
+        <div class="product-item">
+            <img src="Pictures/cpu_PNG29.png" alt="CPU">
+            <h3>CPU</h3>
+        </div>
+        <div class="product-item">
+            <img src="Pictures/png-clipart-mainboard-asus-rog-zenith-extreme-pc-base-amd-tr4-form-factor-e-asus-rog-zenith-extreme-motherboard-extended-atx-socket-tr4-amd-x399-socket-tr4-others-electronics-electronic.png" alt="Motherboard"> <!-- Corrected alt text -->
+            <h3>Motherboard</h3>
+        </div>
+
+        <div class="product-item">
+            <img src="Pictures/RTX_NO_BG.png" alt="Monitor"> 
+            <h3>Monitor</h3>
+        </div>
+        
+        <div class="product-item">
+            <img src="Pictures/RTX_NO_BG.png" alt="Mouse">
+            <h3>Mouse</h3>
+        </div>
+        <div class="product-item">
+            <img src="Pictures/RTX_NO_BG.png" alt="RAM"> 
+            <h3>RAM</h3>
+        </div>
+        <div class="product-item">
+            <img src="Pictures/RTX_NO_BG.png" alt="Power Supply">
+            <h3>Power Supply</h3>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DJKT PC Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+            }
+
+            .scroll-container {
+                background-color: #333;
+                overflow-x: auto; 
+                overflow-y: hidden;
+                white-space: nowrap;
+                display: flex;
+                justify-content: center;  
+                align-items: center;
+                padding: 5px;
+                gap: 15px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 78%;  
+                margin: 0 auto; 
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
+            }
+
+            .scroll-container::-webkit-scrollbar {
+                display: none; 
+            }
+
+            .scroll-item img {
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+                width: 160px;
+                height: 169px;
+                margin-bottom: 8px;
+            }
+
+            .scroll-item {
+                display: inline-block;
+                text-align: center;
+                color: white;
+            }
+
+            .scroll-item p {
+                font-size: 14px;
+                margin: 0;
+                color: white;
+            }
+        </style>
+
+        <section>
+            
+            <div id="navbar">
+                <div id="navbar_logo">
+                    <a href="homepage.html">
+                        <img src="Pictures/DJKT_PC.png" alt="DJKT_PC">
+                    </a>
+                </div>
+                <div id="navbar_links">
+                    <ul id="navibar">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="productlist.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="navbar_icons">
+                    <a class="bi bi-cart3" href="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="body_product">
+            <div id="body_top">
+                <div id="body_top2">
+                    <div id="body_text">
+                        <h1> Welcome to <span>DJKT PC</span>!</h1>
+                        <h2>Your one-stop shop for premium computer parts and accessories!</h2>
+                        <p>Whether you're building a gaming rig, upgrading your setup, or staying on budget, we've got you covered with top-quality products from trusted brands.</p>
+                        <h2>Shop now and build the PC of your dreams!</h2>
+                        <h2>Don't miss our exclusive deals and seasonal discounts!</h2>
+                        <button class="shop_button">
+                            Shop Now
+                        </button>
+                    </div>
+                    <div id="body_image">
+                        <img src="Pictures/RTX_NO_BG.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<h1>Categories</h1>
+
+        <div class="scroll-container">
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="CPU">
+                <p>CPU</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="GPU">
+                <p>GPU</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="Motherboard">
+                <p>MOTHERBOARD</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="Keyboard">
+                <p>PC CASE</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="RAM">
+                <p>RAM</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="SSD">
+                <p>SSD</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="CPU Cooler">
+                <p>CPU COOLER</p>
+            </div>
+
+            <div class="scroll-item">
+                <img src="Pictures/RTX_NO_BG.png" alt="Power Supply">
+                <p>POWER SUPPLY</p>
+            </div>
+        </div>
+
+    </body>
+</html>
